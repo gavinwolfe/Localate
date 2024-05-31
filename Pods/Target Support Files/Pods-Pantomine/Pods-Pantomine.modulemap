@@ -1,0 +1,6 @@
+framework module Pods_Pantomine {
+  umbrella header "Pods-Pantomine-umbrella.h"
+
+  export *
+  module * { export * }
+}

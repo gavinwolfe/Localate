@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="HeaderCollectionReusableView" id="U6b-Vx-4bR" customClass="HeaderCollectionReusableView" customModule="Pantomine" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="343" height="340"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jeO-KC-toQ">
+                    <rect key="frame" x="0.0" y="0.0" width="343" height="340"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qrE-bh-gem">
+                            <rect key="frame" x="0.0" y="0.0" width="343" height="340"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="VXD-Os-UQx">
+                                    <rect key="frame" x="-52" y="-28" width="343" height="184"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                </imageView>
+                                <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BeV-gy-27X">
+                                    <rect key="frame" x="0.0" y="45" width="240" height="38"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <subviews>
+                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="magnifyingglass" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="idI-QV-zxN">
+                                            <rect key="frame" x="8" y="7" width="32" height="25"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Explore your world..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dof-Ac-HFV">
+                                            <rect key="frame" x="48" y="9" width="184" height="21"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="HelveticaNeue-Medium" family="Helvetica Neue" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" red="0.29463312391078833" green="0.29463312391078833" blue="0.29463312391078833" alpha="0.89631895355830915" colorSpace="custom" customColorSpace="sRGB"/>
+                                </view>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oIE-Mc-I6r">
+                                    <rect key="frame" x="28" y="45" width="183" height="37"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.37024951550000001" green="0.71959084969999998" blue="0.98200696239999996" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="17"/>
+                                    <state key="normal" title="FILTER">
+                                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                                <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="hG3-FZ-8wE">
+                                    <rect key="frame" x="28" y="48" width="183" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <segments>
+                                        <segment title="All"/>
+                                        <segment title="Events"/>
+                                        <segment title="Places"/>
+                                    </segments>
+                                </segmentedControl>
+                                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZtT-G8-5tc">
+                                    <rect key="frame" x="156" y="155" width="30" height="30"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <connections>
+                                        <action selector="actionSearch:" destination="U6b-Vx-4bR" eventType="touchUpInside" id="Lh7-rW-wCg"/>
+                                    </connections>
+                                </button>
+                                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="2tC-aH-lDY">
+                                    <rect key="frame" x="8" y="106" width="327" height="128"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="bch-U1-QBj">
+                                        <size key="itemSize" width="128" height="128"/>
+                                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </collectionViewFlowLayout>
+                                </collectionView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="qrE-bh-gem" secondAttribute="trailing" id="MCq-ag-Vnl"/>
+                        <constraint firstItem="qrE-bh-gem" firstAttribute="top" secondItem="jeO-KC-toQ" secondAttribute="top" id="VDi-0O-grE"/>
+                        <constraint firstAttribute="bottom" secondItem="qrE-bh-gem" secondAttribute="bottom" id="ooc-M4-7MJ"/>
+                        <constraint firstItem="qrE-bh-gem" firstAttribute="leading" secondItem="jeO-KC-toQ" secondAttribute="leading" id="zwd-A5-VTb"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <constraints>
+                <constraint firstItem="jeO-KC-toQ" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="7Vk-y7-FQ6"/>
+                <constraint firstItem="jeO-KC-toQ" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="KzS-je-KiP"/>
+                <constraint firstItem="jeO-KC-toQ" firstAttribute="trailing" secondItem="VXr-Tz-HHm" secondAttribute="trailing" id="UWg-iU-b0A"/>
+                <constraint firstItem="jeO-KC-toQ" firstAttribute="bottom" secondItem="VXr-Tz-HHm" secondAttribute="bottom" id="tmr-65-mGO"/>
+            </constraints>
+            <connections>
+                <outlet property="buttonClickedSearch" destination="ZtT-G8-5tc" id="MdJ-aM-fOn"/>
+                <outlet property="collectionView" destination="2tC-aH-lDY" id="gL0-vB-DhG"/>
+                <outlet property="collectionViewFlowLayout" destination="bch-U1-QBj" id="PTN-6e-nKV"/>
+                <outlet property="exploreLabel" destination="Dof-Ac-HFV" id="G7I-iN-n0h"/>
+                <outlet property="filterButton" destination="oIE-Mc-I6r" id="0Rt-5i-GTN"/>
+                <outlet property="imageView" destination="VXD-Os-UQx" id="QRy-eD-BHe"/>
+                <outlet property="magnifyImageView" destination="idI-QV-zxN" id="Tg4-Zw-Yd4"/>
+                <outlet property="overView" destination="qrE-bh-gem" id="Kb5-ES-Ule"/>
+                <outlet property="searchView" destination="BeV-gy-27X" id="ND3-e5-x7H"/>
+                <outlet property="segmentBar" destination="hG3-FZ-8wE" id="bV0-fk-Spz"/>
+            </connections>
+            <point key="canvasLocation" x="35.507246376811594" y="191.51785714285714"/>
+        </collectionReusableView>
+    </objects>
+    <resources>
+        <image name="magnifyingglass" catalog="system" width="128" height="115"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
